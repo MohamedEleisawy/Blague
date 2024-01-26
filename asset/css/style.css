@@ -1,0 +1,148 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial';
+    background-color: #f2f2f2;
+    /* background-image: url('../drole.jpg'); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 90px; */
+    /* overflow-y: hidden; */
+}
+header{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(69, 121, 174);
+}
+h1{
+    padding: 10px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.messageError {
+    color: red;
+}
+
+.question, .reponse{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.question{
+    color:black;
+}
+.reponse{
+    color: white;
+    transition: 2s;
+}
+.reponse:hover{
+    color: red;
+    transform: scale(1.2);
+}
+
+form {
+    margin-top: 20px;
+}
+
+#sendBlague,#sendReponse,#ajouter,#gen{
+    padding: 18px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#sendReponse{
+    color: red;
+}
+#sendBlague{
+    color: blue
+}
+
+#ajouter,#gen{
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #3498db;
+}
+#james{
+    color: goldenrod;
+    text-align: center;
+}
+#lesBoutons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lesBoutons button{
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 20px;
+    font-size: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#lesBoutons button:hover{
+    transform: scale(1.2);
+}
+
+#boutonDrole1{
+    background-color: #4CAF50;
+}
+
+#boutonDrole2{
+    background-color: #3498db;
+}
+
+#boutonDrole3{
+    background-color: #e74c3c;
+}
+
+#boutonFlop1{
+    background-color: #e67e22;
+}
+
+#boutonFlop2 {
+    background-color: #9b59b6;
+}
+
+#boutonFlop3 {
+    background-color: #f39c12;
+}
+
+@media screen and (max-width: 480px) {
+
+
+    header {
+        flex-direction: column; /* Réorganisez le contenu du header en colonne */
+    }
+
+    #ajouter, #gen {
+        width: 100%; /* Assurez-vous que les boutons occupent la largeur disponible */
+    }
+}
