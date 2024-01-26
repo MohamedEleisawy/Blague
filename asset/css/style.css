@@ -134,7 +134,10 @@ a {
 #boutonFlop3 {
     background-color: #f39c12;
 }
-
+footer{
+    text-align: center;
+    color: rgb(253, 183, 183);
+}
 @media screen and (max-width: 480px) {
 
 
